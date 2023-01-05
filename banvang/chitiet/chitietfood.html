@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="../lession7/img/logo.cc5d661a.svg">
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+<script src="../js/view.js"></script>
+    <title>Drinks</title>
+</head>
+<body style="background-color: #1fe37f;">
+<header>
+    <section class="sectionmenu">
+    <div class="header">
+        <div class="listheader">
+          <div class="logo">
+            <a href="../view.html">
+                <img src="../img/logo-main.webp" alt="">
+              </a>
+          </div>
+          <div class="menu">
+             <div class="item">
+              <a href="../view.html">TRANG CHỦ</a>
+             </div>
+             <div class="item">
+              <a href="../foods.html">SẢN PHẨM</a>                 
+              <ul class="listmenu2">
+                <li class="item2">
+                     <a href="../foods.html">
+                        <b>Thức ăn</b> 
+                        <img src="../img/product_1.png" alt="">
+                     </a>
+                </li>
+                <li class="item2">
+                     <a href="../menu.html"> <b>Cafe</b> 
+                        <img src="../img/cfnong1.jfif" alt="">
+                     </a>
+                </li>
+                <li class="item2">
+                    <a href="trangmieng.html"> <b>Kem</b> 
+                        <img src="../img/kem.jfif" alt="">
+                    </a>
+                </li>
+            </ul>
+             </div>
+             <div class="item">
+              <a href="../blog.html">BLOG</a>
+             </div>
+             <div class="item">
+                <a href="../contrac.html">LIÊN HỆ</a>
+             </div>
+          </div>
+          <div class="action">
+            <div class="item" id="itemgh" onclick="showcart()">
+                <img src="../img/cart.png" alt="">
+            </div>
+            <div id="slcart">
+                <span>0</span>
+            </div>
+            <div id="showspc">
+                <table>
+                    <tr>
+                      <th>STT</th>
+                      <th>anh</th>
+                      <th>ten</th>
+                      <th>gia</th>
+                      <th>sl</th>
+                      <th>total</th>
+                    </tr>
+                   <tbody id="mycarts">
+                       
+                   </tbody>
+                </table>
+                <a href="../giohang.html">Thanh Toan</a>
+            </div>
+            <div class="item">
+               <img src="../img/user.png" alt="">
+            </div>
+          </div>
+        </div>
+     </div>
+     <div class="tipmenu">
+    <div class="navbar">
+
+    </div>
+
+   
+</div>
+</section>
+</header>
+<section class="chitietsec">
+<div class="vungcf cfchitiet">
+    <div class="h2cf">
+        <h2>Chi Tiết</h2>
+    </div>
+    <div class="vungnhocf vungchitiet">
+         <div class="itemcfs itemchitiet">         
+            <div class="imgsp imgchitiet">
+                <img src="../img/product_1.png" alt="">
+            </div>
+                <p> Cá hồi</p>     
+                <p> 150.000 <sup>vnd</sup> </p>
+                <select name="sl" id="">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3+">3+</option>
+                </select>
+                <button class="btnsp btnchitiet" onclick="addsp(this)">thêm</button>                    
+         </div>
+         <div class="chitietsp">
+            <h3>Cân bằng</h3>
+            <ul>
+              <li>Công thức độc đáo</li>
+              <li>Tạo hình ấn tượng</li>
+              <li>Giữ nguyên nét  truyền thống</li>
+              <li>They're linked to a lowest risk of diabetes</li>
+            </ul>
+         </div>
+         
+         
+         
+       
+    </div>
+
+</div>
+</section>
+<footer>
+    <div class="footermenu foot">
+        <div class="footerlistmenu">
+            <div class="logofootmenu">
+                <img src="../banvang/img/logo.png" alt="">
+                <p>
+                    Cung cấp sản phẩm cho bạn
+                </p>
+            </div>
+            <div class="ttfootmenu">
+                  <ul class="listfootmenu">
+                    <li class="itemfootmenu">
+                       <a href="">Email</a>
+                    </li>
+                    <li class="itemfootmenu">
+                        <a href="">SDT</a>
+                    </li>
+                    <li class="itemfootmenu">
+                        <a href="">Địa chỉ</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="formmenu">
+              <form action="">
+                <div class="formitmenu">
+                    <p>Liên Hệ</p>
+                </div>
+                <div class="formitmenu">
+                    <input type="text" name="email"placeholder="Email">
+                </div>
+                <div class="formitmenu">
+                    <input type="submit" value="Nhận Tin">
+                </div>
+              </form>
+            </div>
+        </div>
+     </div>
+</footer>
+<script src="../js/jquery.js"></script>
+<script src="../js/sinhid.js"></script>
+<script>
+showgiohang_trangthanhtoan();
+</script>
+</body>
+</html>

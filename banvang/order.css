@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+.d-flex{
+    display: flex;
+}
+body{
+    background-color: #f8f7f4;
+}
+.menu{
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.menu-item{
+    width: 30%;
+}
+.menu .menu-item:nth-child(1) ul{
+    float: left;
+}
+.menu .menu-item:nth-child(3) ul{
+    float: right;
+}
+.logo{
+    margin: auto;
+}
+.item{
+    padding: 1.5rem;
+    position: relative;
+}
+.header{
+    background-color: #f8f7f4;
+}
+.menu .menu-item .item a{
+    color: black;
+    text-transform: uppercase;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.menu-level{
+    position: absolute;
+    
+    left: 0;
+    background-color: #f8f7f4;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+.menu-level .item-level a{
+    text-transform: none !important;
+    font-size: 0.75rem;
+}
+.menu-level .item-level{
+    padding: 5px 0;
+}
+.menu-level .item-level:hover{
+    background-color: aliceblue;
+}
+.menu-level{
+    display: none;
+    z-index:1;
+}
+
+body{
+    position: relative;
+}
+.header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+h3{
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+.banner div button{
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 1rem 2.5rem;
+}
+.shop-now{
+    display: flex;
+    margin: auto;
+    width: 11rem;
+}
+
+.shop-now > button:hover{
+    background: #fff;
+    color: #000;
+}
+
+.list-img{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+.item-image{
+    width: 33%;
+}
+
+.item-image{
+    position: relative;
+    margin-top: 1rem;
+}
+.item-image .content{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+}
+.item-image .content h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.list-product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+.product-content h4, .product-content h3{
+    text-align: center;
+    color: #000;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.product-detail{
+    position: relative;
+    width: 22%;
+    margin-bottom: 2rem;
+}
+.product-add{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.product-add button{
+    width: 100%;
+    background-color: #ecebea;
+    color: #000;
+    padding: 0.75rem 2rem;
+    border: none;
+}
+.product-detail:hover .product-add:hover button{
+    color: #fff;
+    background: #000;
+}
+.product-content{
+    padding-bottom: 1rem ;
+}
+@keyframes boxShadow {
+    0% {box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.45);}
+    1% {box-shadow: 0px 0px 22px 4px rgba(0,0,0,0.45);}
+    100% {box-shadow: 0px 0px 22px 4px rgba(0,0,0,0.45);}
+}
+
+@keyframes displayElm {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.product-detail:hover .product-add{
+    animation: displayElm;
+    animation-delay: 0.1s;
+    animation-duration: 1s;
+    display: block;
+}
+
+.product-detail:hover{
+    animation: boxShadow;
+    animation-delay: 0.25s;
+    animation-duration: 100s;
+    cursor: pointer;
+}
+
+.product-detail .product-avatar{
+    position: relative;
+}
+.product-detail .sales{
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    padding: 0.25rem 0.5rem;
+    background-color: red;
+    border-radius: 15px;
+    color: #fff;
+}
+
+@keyframes showDown {
+    0% {top: 55%; left: 50px; opacity: 0.25;}
+    40% {top: 145%; left: 35px; opacity: 0.35;}
+    80% {top: 145%; left: 35px; opacity: 0.75;}
+    100% {top: 100%; left: 0px; opacity: 1;}
+}
+@keyframes showUp {
+    0% {top: 150%; left: 50px; opacity: 0.25;}
+    50% {top: 120%; left: 35px; opacity: 0.35;}
+    100% {top: 100%; left: 0px; opacity: 1;}
+}
+
+.item:hover .menu-level{
+    display: block;
+    animation-name: showDown;
+    animation-duration: 4s;
+}
+
+.banner.banner-colosseum {
+    width: 87%;
+    margin: auto;
+}
+.banner.banner-colosseum .shop-now{
+    margin-left: 0;
+}
+.banner.banner-colosseum h5, 
+.banner.banner-colosseum h3, 
+.banner.banner-colosseum h2{
+    color: #fff;
+    text-align: left;
+    margin-bottom: 0.75rem !important;
+}
+
+footer{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.footer-list{
+    justify-content: space-between;
+}
+.footer-list .footer-item{
+    padding: 1.5rem 0.5rem;
+    width: 25%;
+}
+.footer-list .footer-item:nth-child(3) a,
+.footer-list .footer-item:nth-child(4) a{
+    float: right;
+}
+.footer-list .footer-item a{
+    color: #000;
+
+}
+.footer-list .footer-item a:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 1500px) {
+    .menu .menu-item .item a{
+        font-size: 12px;
+    }
+    .item:hover .menu-level{
+        display: block;
+        animation-name: showUp;
+        animation-duration: 4s;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .header {
+      background-color: red;
+    }
+    .menu .menu-item .item a{
+        font-size: 10px;
+    }
+  }
+
+.order{
+    width: 80%;
+    margin: auto;
+}
+.w-25{
+    width: 25%;
+}
+.w-75{
+    width: 75%;
+}
+.add-more{
+    text-align: right;
+}
+.product-order{
+    justify-content: space-between;
+}
+.order-image{
+    width: 15%;
+    padding: 1.5rem;
+}
+.order-infor{
+    width: 60%;
+    padding: 1.5rem;
+}
+.address-order{
+    border-bottom: 1px solid #000;
+    padding: 1.5rem 0;
+}
+.order-title{
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding: 1.5rem 0
+}
+
+.item-cal > div {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid;
+}
+.item-cal div:nth-child(2){
+    border-left: 0;
+    border-right: 0;
+}
+.order-infor > div{
+    margin-top: 0.25rem;
+}

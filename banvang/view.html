@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../banvang/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="aos-master/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../lession7/img/logo.cc5d661a.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Mrs-Coffees của Đăng</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+          <div class="listheader">
+            <div class="logo">
+                <a href="view.html">
+                    <img src="../banvang/img/logo-main.webp" alt="">
+                </a>
+            </div>
+            <div class="menu">
+              <div class="item">
+                <a href="view.html">TRANG CHỦ</a>
+              </div>
+                   <div class="item">
+                    <a href="../banvang/foods.html">SẢN PHẨM</a>                 
+                        <ul class="listmenu2">
+                            <li class="item2">
+                                 <a href="../banvang/foods.html">
+                                    <b>Thức ăn</b> 
+                                    <img src="../banvang/img/product_1.png" alt="">
+                                 </a>
+                            </li>
+                            <li class="item2">
+                                 <a href="../banvang/menu.html"> <b>Cafe</b> 
+                                    <img src="../banvang/img/cfnong1.jfif" alt="">
+                                 </a>
+                            </li>
+                            <li class="item2">
+                                <a href="trangmieng.html"> <b>Kem</b> 
+                                    <img src="../banvang/img/kem.jfif" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                   </div>
+                   <div class="item">
+                    <a href="blog.html">BLOG</a>
+                   </div>
+                   <div class="item">
+                    <a href="./contrac.html">LIÊN HỆ</a>
+                   </div>
+                </div>
+                <div class="action">
+                  <div class="item its" onclick="showcart()">      
+                      <img src="../banvang/img/cart.png" alt="">
+                  </div>
+                  <div id="slcart">
+                     <i>0</i>
+                  </div>
+                  <div id="showsp">
+                  
+                    <table>
+                        <tr>
+                          <th>Sản phẩm</th>
+                          <th>Tên</th>
+                          <th>Giá</th>
+                          <th>Số lượng</th>
+                          <th>Chọn</th>
+                        </tr>
+                       <tbody id="mycart">
+
+                       
+                      
+                       </tbody>
+                
+                       <div class="totalgh">                    
+                      <i>Tổng Tiền: <span>0</span><sup>vnd</sup></i>
+                       </div>
+                    </table>
+                  
+                    <a href="giohang.html">Thanh Toan</a>
+                </div>
+                  <div class="item users">
+                     <img src="../banvang/img/user.png" alt="">
+                  </div>
+                  <div class="iconre">
+                    <img src="../banvang//img/icon-128x128.png" alt="">
+                  </div>
+                  <div class="menure">
+                    <ul class="listre">
+                      <li class="itemre">
+                         <a href="../banvang/view.html">TRANG CHỦ</a>
+                      </li>
+                      <li class="itemre">
+                         <a href="../banvang/menu.html"> SẢN PHẨM</a>
+                      </li>
+                      <li class="itemcre">
+                        <a href="../banvang/blog.html">BLOG</a>
+                      </li>
+                      <li class="itemcre">
+                         <a href="../banvang/blogkem.html">GIỚI THIỆU</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="banners">
+                <div class="listbanners">
+                    <div class="anhbanners">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100" src="../banvang/img/banner.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="../banvang//img/htesti_bg_img.png" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="../banvang//img/ft_bg_img.png" alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                    <div class="tittlebanners">
+                          <div class="thucanth">
+                            <h2>
+                             <p>THỨC ĂN <br>
+                                THƯỢNG HẠNG                             
+                             </p>
+                            </h2>
+                          </div>
+                          <div class="chuyencungcap">
+                            <p>Chuyên cung cấp các món ăn đảm bảo dinh dưỡng
+                                hợp vệ sinh đến người dùng, <br>
+                                phục vụ người dùng 1 cái
+                                hoàn hảo nhất</p>
+                          </div>
+                          <div class="buttonbanner">
+                            <button>
+                                <a href="foods.html">
+                                Mua Ngay</button>
+                                 </a>
+                        </div>
+                    </div>
+                       <div>
+                        <div class="bannerava">
+                            <img src="../banvang/img/img_1.png" alt="">
+                            <img src="../banvang/img/img_2.png" alt="">
+                            <img src="../banvang/img/img_3.png" alt="">
+                        </div>
+                       </div>
+                   
+                </div>
+           </div>
+    </header>
+<section class="het">
+   <section class="baoquat">
+        <div class="category">
+            <h2>Sản phẩm của chúng tôi</h2>
+         <ul class="listcate" id="listid">
+              <div class="monan">
+                <div class="itemcate" id="itemcateid" title="Cá Hồi nấu rượu" data-aos="fade-down-right"  data-aos-duration="1000">
+                    <div class="anh">
+                        <img src="../banvang/img/product_1.png" alt="">
+                     </div>
+                     <div class="sao">
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                     </div>
+                     <div class="name">
+                        <span>
+                          Cá Hồi nấu rượu
+                        </span>
+                     </div>
+                     <div class="mota giatien">
+                      <h4>
+                        <span class="pricevl">156.000</span> <sup>vnd</sup>
+                      </h4>
+                     </div>
+                         <button class="addtocart" data-product-id="1">  Thêm vào giỏ  </button>
+
+                </div>
+              </div>
+          
+                <div class="itemcate" data-aos="fade-down"  data-aos-duration="1000" title="Trứng hoàn kim">
+                    <div class="anh">
+                        <img src="../banvang/img/product_2.png" alt="">
+                     </div>
+                     <div class="sao">
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                     </div>
+                     <div class="name">
+                       <span>
+                          Trứng hoàng kim
+                        </span>
+                     </div>
+                     <div class="mota giatien">
+                      <h4>
+                        <span>66.000</span> <sup>vnd</sup>
+                      </h4>
+                     </div>
+
+                     <button class="addtocart">Thêm vào giỏ</button>
+
+                </div>
+        
+          
+                <div class="itemcate"data-aos="fade-down-left"  data-aos-duration="1000" title="Salad Trứng">
+                    <div class="anh">
+                        <img src="../banvang/img/product_3.png" alt="">
+                     </div>
+                     <div class="sao">
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                     </div>
+                     <div class="name">
+                        <span>
+                          Salad với trứng 
+                        </span>
+                     </div>
+                     <div class="mota giatien">
+                      <h4>
+                        <span>96.000</span> <sup>vnd</sup>
+                      </h4>
+                     </div>
+
+                     <button class="addtocart">   Thêm vào giỏ </button>
+                
+                </div>
+
+          
+                <div class="itemcate" data-aos="fade-up-right"  data-aos-duration="1000" title="Hambogor">
+                    <div class="anh">
+                        <img src="../banvang/img/product_4.png" alt="">
+                     </div>
+                     <div class="sao">
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                     </div>
+                     <div class="name">
+                        <span>
+                         Hambơgơ
+                        </span>
+                     </div>
+                     <div class="mota giatien">
+                      <h4>
+                        <span>76.000</span> <sup>vnd</sup>
+                      </h4>
+                     </div>
+                  
+                       <button class="addtocart"> Thêm vào giỏ  </button>
+                   
+                </div>
+           
+
+                <div class="itemcate" data-aos="fade-up"  data-aos-duration="1000" title="Bánh Kep">
+                    <div class="anh">
+                        <img src="../banvang/img/product_5.png" alt="">
+                     </div>
+                     <div class="sao">
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                     </div>
+                     <div class="name">
+                        <span>
+                         bánh Kep TBN
+                        </span>
+                     </div>
+                     
+                     <div class="mota giatien">
+                      <h4>
+                        <span>86.000</span> <sup>vnd</sup>
+                      </h4>
+                     </div>
+
+                     <button class="addtocart">  Thêm vào giỏ  </button>                
+                </div>
+                  
+                <div class="itemcate" data-aos="fade-up-left"  data-aos-duration="1000" title="Cá hồi sốt">
+                    <div class="anh">
+                        <img src="../banvang/img/product_6.png" alt="">
+                     </div>
+                     <div class="sao">
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                       <span>
+                        <img src="../banvang/img/star.png" alt="">
+                       </span>
+                     </div>
+                     <div class="name">
+                       <span>
+                         Cá hồi sốt thơm
+                        </span>
+                     </div>
+                     <div class="mota giatien">
+                      <h4>
+                        <span>65.000</span> <sup>vnd</sup>
+                      </h4>
+                     </div>
+                   
+                        <button class="addtocart">   Thêm vào giỏ  </button>
+                </div>
+            
+           </ul>
+           <div class="list-page">
+            <div class="items">
+                <a href="">1</a>
+            </div>
+            <div class="items">
+                <a href="">2</a>
+            </div>
+            <div class="items">
+                <a href="">3</a>
+            </div>
+            <div class="items">
+                <a href="">4</a>
+            </div>
+        </div>
+    </div>
+    
+    </section>
+    <footer>
+        <div class="voucher vouchermedia">
+            <div class="listvou">
+                <img src="../banvang/img/percent-off.webp" alt="">
+                <div class="nvar">
+                <p> 
+                    Trên tất cả các hương vị
+                </p>
+                <h2>
+                    CHỈ THỨ SÁU
+                </h2>
+                <span>
+                Coupon chỉ có giá trị vào ngày thứ Sáu từ 1/11 - 30/12/2016
+                </span>
+            </div>
+            </div>
+            <div class="qrcode">
+                <div class="vungto">
+                    <div class="anhqr">
+                        <a href="">
+                        <img src="../banvang/img/qr-code.webp" alt="">
+                    </a>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="section">
+                <div class="noidung">
+                   <div class="mobai">
+                    
+                       <div class="ttsec">
+                           <h2></h2>
+                       </div>
+                   </div>
+                   
+                </div>    
+           </div>
+            <div class="formbook" data-aos="flip-down"data-aos-duration="3000" >
+              <form action="">
+                <div class="formlist">
+                    <h2>Điền thông tin
+                        đặt bàn
+                    </h2>
+                        <p>
+                            Số người
+                        </p>
+                        <div class="formsl">
+                            <select name="sl" id="">
+                                <option value="#" selected>Chọn số người</option>
+                                <option value="2">2 người</option>
+                                <option value="4">4 người</option>
+                                <option value="4+">Nhiều hơn 4 người</option>
+                            </select>
+                        </div>
+                        <span>Ngày Đặt</span>
+                        <div class="formdate">
+                            <input type="date" name="date" placeholder="Ngày đặt">
+                        </div>
+                        <div class="inpute">
+                          <h4>Họ và tên</h4>
+                          <input type="text" name="email" placeholder="Nhập đủ tên">
+                        </div>
+                </div>
+                   
+                    <div class="ghichu">
+                        <textarea name="ghichu" id="" cols="37" rows="5" placeholder="Ghi chú...."></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" name="submit">
+                    </div>
+              </form>
+        </div>
+     </div>
+       <div class="danhgia">
+           <div class="section">
+            <div class="noidung">
+               <div class="mobai">
+                   <!--<div class="logosect">
+                         <img src=".//img/" alt="">
+                   </div> -->
+                   <div class="ttsec">
+                       <h2></h2>
+                   </div>
+               </div>
+               
+            </div>    
+       </div>
+    </div>
+    <div class="vungtaptin">
+    <div class="cafe">
+          <h1>CAFE</h1>
+    </div>
+
+        <div class="tintuc">
+            <div class="vungtin">
+             <div class="vung1">
+                 <div class="anhvung1">
+                     <img src="./img/index_special_morning.webp" alt="">
+                  </div>
+                 <div class="titlevungtin">
+                    <h3>Thức uống đặc biệt</h3>
+
+                    
+                 </div>
+             </div>
+             <div class="vung2">
+                <div class="listv2">
+                <div class="vung2-tt1" data-aos="fade-up-right">
+                   <h3>1 / Cà phê SÁNG TẠO 8</h3>
+                   <p>   Từ những hạt cà phê Arabica, Robusta, Excelsa. Có hương thơm đầm, thơm rất lâu với hậu vị đậm và êm. Là...
+                        Liên hệ</p>
+                </div>
+                <div class="vung2-tt2"data-aos="fade-up-left">
+               
+                   <h3> 2 / Cà phê SÁNG TẠO 8 </h3>
+                   <p>
+  Từ những hạt cà phê Arabica, Robusta, Excelsa. Có hương thơm đầm, thơm rất lâu với hậu vị đậm và êm. Là một...
+  179.999₫
+                 </p>
+                </div>
+                <div class="vung2-tt3"data-aos="fade-up-right">
+                    <h3>
+                     3 / Cà phê LEGEND
+                    </h3>
+                    <p>
+ LEGEND là cà phê chồn được sản xuất bằng phương pháp "Lên men sinh học", sản phẩm chỉ có duy nhất ở Trung Nguyên....
+ 900.000₫
+                    </p>
+                 </div>
+                 <div class="vung2-tt4"data-aos="fade-up-left">
+                    <h3>
+                        4 / Hộp quà LEGEND
+                    </h3>
+                    <p>
+    Trong mỗi hộp quà LEGEND gồm có: - Cà phê Legend 225 gram - Phin cà phê mang hình các danh nhân nổi...
+    960.000₫ 
+                    </p>
+                    </div>
+            </div>
+             </div>
+            </div>
+          </div> 
+          <div class="banner banmedia">
+            <div class="listbanner st1" data-aos="fade-right">
+              <div class="anhbanner ban1">
+                <img src="../banvang/img/OIP.jfif" alt="">
+              </div>
+              <div class="titlebanner">
+                <h3>
+                    Sáng tạo
+                      hương và vị
+                </h3>
+              </div>
+              <div class="button">
+                <a href="blogfoods.html">
+                <button>
+                    CHI TIẾT
+                </button>
+            </a>
+              </div>
+            </div>
+            <div class="listbanner">
+                <div class="anhbanner cf2">
+                  <img src=".//img/cfnong2.jfif" alt="">
+                </div>
+                <div class="titlebanner">
+                  <h3>
+                     Từ những hạt ngon nhất
+                  </h3>
+                </div>
+                <div class="button">
+                    <a href="blogfoods.html">
+                        <button>
+                            CHI TIẾT
+                        </button>
+                    </a>
+                </div>
+              </div>
+              <div class="listbanner st2"data-aos="fade-left">
+                <div class="anhbanner">
+                  <img src=".//img/kem.jfif" alt="">
+                </div>
+                <div class="titlebanner">
+                  <h3>
+                     Vị ngọt của thời tiết
+                  </h3>
+                </div>
+                <div class="button">
+                    <a href="blogkem.html">
+                        <button>
+                            CHI TIẾT
+                        </button>
+                    </a>
+                </div>
+              </div>
+          </div> 
+    </div>
+
+      <div class="news">
+    <div class="dongnuoc"  data-aos="fade-down"data-aos-duration="3000">
+       <img src="./img/milk-pour2.webp" alt="">
+    </div>
+    <div class="new-nd">
+       <div class="cup">
+        <img src="./img/pour-cup.webp" alt="">
+       </div>
+       <div class="bannuoc">
+           <img src="./img/milk-drops.webp" alt="">
+       </div>
+    </div>
+
+    <div class="tt1">
+        <h2>
+                "COFFEE AND YOU"
+        </h2>
+        <h2>
+         CỬA HÀNG CÀ PHÊ PREMIUM
+        
+        </h2>
+    </div>
+   <div class="tt2">
+    <button>
+        <a href="blog.html">
+        TÌM HIỂU THÊM
+        </a>
+    </button>
+   </div>
+  </div>
+  <div class="contain containmedia">
+    <div class="cap">
+      <img src="../quancf/img/Capture-8.png" alt="">
+       <h2>category</h2>
+  </div>
+    <div class="list-contain">
+      <div class="item-contain anh">
+           <img src="../banvang/img//270_crop_AMERICANO.png" alt="">
+      </div>
+      <div class="content">
+        <h4 class="giatien">
+            <span> 48.000</span><sup>vnd</sup>
+        </h4>
+        <h3 class="name">
+          America no
+        </h3>
+          <h2>
+            Đắng tạo hương vị  riêng
+          </h2>
+     </div>
+     
+        <button class="addtocart">MUA NGAY</button>
+   
+            
+      </div>
+      <div class="list-contain">
+        <div>
+        <div class="item-contain anh">
+             <img src="../banvang/img/270_crop_Bac_Xiu_Da.png" alt="">
+        </div>
+        <div class="content">
+          <h4 class="giatien">
+             <span> 54.000</span> <sup>vnd</sup>
+          </h4>
+          <h3 class="name">
+             Bạc xỉu
+          </h3>
+          <h2>
+              Bạc xỉu chuẩn SG
+          </h2>
+         
+       </div>
+      
+       <button class="addtocart">MUA NGAY</button>    
+    </div>
+        </div>
+        <div class="list-contain">
+          
+            <div class="item-contain anh">
+                 <img src="../banvang/img//270_crop_PHIN-SUA-DA.png" alt="">
+            </div>
+            <div class="content">
+              <h4 class="giatien">
+                <span> 64.000</span> <sup>vnd</sup>
+              </h4>
+              <h3 class="name">
+                 Phindi-sữa đá
+              </h3>
+              <h2>
+                 cafe sữa truyền thống
+              </h2>
+           
+           </div>
+         
+           <button class="addtocart">MUA NGAY</button>        
+       
+        </div>
+            <div class="list-contain s">
+                <div class="item-contain anh">
+                     <img src="../banvang/img/270_crop_phindi_choco_new.png" alt="">
+                </div>
+                <div class="content">
+                  <h4 class="giatien">
+                    <span>56.000</span> <sup>vnd</sup>
+                  </h4>
+                  <h3 class="name">
+                     Phindi-choco
+                  </h3>
+                  <h2>
+                      sữa cf thạch
+                  </h2>
+               
+               </div>
+             
+               <button class="addtocart">MUA NGAY</button>
+             
+                      
+                </div>
+                <div class="list-contain">
+                    <div class="item-contain anh">
+                         <img src="../banvang/img/271_crop_phindi_hanh_nhan_new.png" alt="">
+                    </div>
+                    <div class="content">
+                      <h4 class="giatien">
+                        <span> 32.000</span><sup>vnd</sup>
+                      </h4>
+                      <h3 class="name">
+                          Phindi-hạnh nhân
+                      </h3>
+                      <h2>
+                        Cafe đậm vị và thạch cafe
+                      </h2>
+                   
+                   </div>
+                 
+                   <button class="addtocart">MUA NGAY</button>
+                   
+                          
+                    </div>
+                    <div class="list-contain">
+                        <div class="item-contain anh">
+                             <img src="../banvang/img/273_crop_phindi_kem_sua_new.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h4 class="giatien">
+                            <span> 30.000</span><sup>vnd</sup>
+                          </h4>
+                          <h3 class="name">
+                              Phindi-sữa
+                          </h3>
+                          <h2>
+                            Cafe đậm vị và thạch cafe
+                          </h2>
+                       </div>
+                     
+                       <button class="addtocart">MUA NGAY</button>
+                    
+                              
+                        </div>
+                    </div>
+                  </div>
+                </section>
+                    <div class="nhanxet"data-aos="zoom-in-right">
+                        <div class="avacmt">
+                                  
+                        </div>
+                        <div class="cmt">
+                           <p>Là người sành điệu uống cà phê, nhóm chúng tôi quyết ghé xem sao, cà phê ngon thật, quán độc đáo lạ, giá rẻ, cả chưa từng trải nghiệm ở đâu,… sẽ ghé lần sau</p>
+                        </div>
+           
+                       <div class="sao">
+                           <span>
+                               <img src="../banvang/img/star.png" alt="">
+                              </span>
+                              <span>
+                               <img src="../banvang/img/star.png" alt="">
+                              </span>
+                              <span>
+                               <img src="../banvang/img/star.png" alt="">
+                              </span>
+                              <span>
+                               <img src="../banvang/img/star.png" alt="">
+                              </span>
+                       </div>
+                      
+</section>
+         <div class="footer" data-aos="fade-up">
+            <div class="footerlist">
+                <div class="logofoot">
+                    <img src="../banvang/img/logo.png" alt="">
+                    <p>
+                        Cung cấp sản phẩm cho bạn
+                    </p>
+                </div>
+                <div class="ttfoot">
+                      <ul class="listfoot">
+                        <li class="itemfoot">
+                           <a href="">Email</a>
+                        </li>
+                        <li class="itemfoot">
+                            <a href="">SDT</a>
+                        </li>
+                        <li class="itemfoot">
+                            <a href="">Địa chỉ</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="form">
+                  <form action="">
+                    <div class="formit">
+                        <p>Liên Hệ</p>
+                    </div>
+                    <div class="formit">
+                        <input type="text" name="email"placeholder="Email">
+                    </div>
+                    <div class="formits inputmedia">
+                        <input type="submit" value="Nhận Tin">
+                    </div>
+                  </form>
+                </div>
+            </div>
+         </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="aos-master/dist/aos.js"></script>
+    <script src="../banvang/js/view.js"></script>
+    <script src="..//banvang/js/jquery.js"></script>
+   <!--<script src="..//banvang/js/js.js"></script>-->
+   <script src="../banvang/js/viewfoods.js"></script>
+
+<script>
+    AOS.init();
+    $(document).ready(function(){
+      $('.iconre').click(function(){
+        $('.menure').slideToggle();
+      })
+    })
+  </script>
+</html>
+
